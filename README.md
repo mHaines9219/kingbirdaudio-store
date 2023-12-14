@@ -4,13 +4,18 @@ Kingbird Audio Store is an ecommerce store created in memory of my failed record
 
 ## Tech Stack
 
-Python
-Django
-React
-Stripe API
+- Python
+- Django
+- React
+- Stripe API
 
 ## Wireframes
 
+![Landing page](./wireframes/pngs/landingpage.png)
+![Detail page](./wireframes/pngs/detailpage.png)
+![Profile page](./wireframes/pngs/profilepage.png)
+![Checkout page](./wireframes/pngs/checkoutpage.png)
+![Post Checkout page](./wireframes/pngs/congratsscreen.png)
 
 ## User Stories
 
