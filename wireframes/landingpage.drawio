@@ -1,0 +1,37 @@
+<mxfile host="65bd71144e">
+    <diagram id="VHNFQe2smk09z31DuYg3" name="Page-1">
+        <mxGraphModel dx="1614" dy="1213" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+                    <mxGeometry x="-70" y="140" width="700" height="700" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="SITE TITLE" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="-70" y="140" width="700" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="CAT1&amp;nbsp;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;/span&gt;CAT2&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;/span&gt;CAT3&amp;nbsp;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="-70" y="280" width="700" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="CART" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="510" y="280" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="FEATURED" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="220" y="380" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="PRODUCT" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="10" y="490" width="120" height="200" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="PRODUCT" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="220" y="490" width="120" height="200" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="PRODUCT" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="425" y="490" width="120" height="200" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="FOOTER" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="-70" y="780" width="700" height="60" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
