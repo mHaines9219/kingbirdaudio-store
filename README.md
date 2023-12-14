@@ -9,6 +9,18 @@ Kingbird Audio Store is an ecommerce store created in memory of my failed record
 - React
 - Stripe API
 
+## MVP
+
+- Build a fully functional ecommerce website to sell digital goods
+- Allow users to have a list of their past orders to redownload at any time from their profile page
+- Use payment API like Stripe or PayPal
+
+## Stretch Goals
+
+- Add audio demos of the products being used
+- Add instructional page for how to implement/install
+- Have cart persist if user leaves website and comes back
+
 ## Wireframes
 
 ![Landing page](./wireframes/pngs/landingpage.png)
@@ -27,4 +39,6 @@ Kingbird Audio Store is an ecommerce store created in memory of my failed record
 
 ## ERD Chart
 
-![ERD](./wireframes/pngs/erd.png)
+## Routing Chart
+
+![Routing Chart](./wireframes/routing.png)
