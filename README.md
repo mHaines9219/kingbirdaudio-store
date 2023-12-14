@@ -26,3 +26,5 @@ Kingbird Audio Store is an ecommerce store created in memory of my failed record
 - AAU I'd like to see my old orders and be able to download old orders incase I lose the files
 
 ## ERD Chart
+
+![ERD](./wireframes/pngs/erd.png)
