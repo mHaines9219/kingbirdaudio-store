@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 export default function Navbar() {
   return (
     <div>
-      <Link to="/details">DETAILS</Link>
+      <Link to="/category/:id">categories</Link>
       <Link to="/">HOME</Link>
     </div>
   );
