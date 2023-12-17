@@ -1,0 +1,13 @@
+.product-carousel {
+  height: 60vh;
+  border: 2px solid green;
+  display: flex;
+  justify-content: space-around;
+}
+
+.individual-product {
+  border: 2px solid purple;
+  height: 50vh;
+  width: 20vw;
+  margin: auto;
+}

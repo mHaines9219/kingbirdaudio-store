@@ -1,7 +1,18 @@
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }
 
+* {
+  border: 2px solid red;
+}
+
+.site-banner {
+  border: 2px solid blue;
+  height: 20vh;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;

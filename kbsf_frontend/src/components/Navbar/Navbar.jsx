@@ -1,11 +1,29 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './Navbar.css';
 
 export default function Navbar() {
   return (
-    <div>
-      <Link to="/category/:id">categories</Link>
-      <Link to="/">HOME</Link>
+    <div className="navbar-container">
+      <Link to="/category/protools" className="cat-link">
+        PRO TOOLS
+      </Link>
+      <Link to="/category/:id" className="cat-link">
+        FL STUDIO
+      </Link>
+      <Link to="/category/:id" className="cat-link">
+        LOGIC
+      </Link>
+      <Link to="/category/:id" className="cat-link">
+        ABLETON
+      </Link>
+      <Link to="/category/:id" className="cat-link">
+        BANDLAB
+      </Link>
+
+      <Link to="/" className="cat-link" id="navbar-home-btn">
+        HOME
+      </Link>
     </div>
   );
 }

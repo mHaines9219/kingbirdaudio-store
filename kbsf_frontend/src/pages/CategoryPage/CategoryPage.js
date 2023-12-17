@@ -6,9 +6,7 @@ import Navbar from '../../components/Navbar/Navbar';
 export default function CategoryPage() {
   return (
     <>
-      <Navbar />
       <div>category</div>
-      <Footer />
     </>
   );
 }

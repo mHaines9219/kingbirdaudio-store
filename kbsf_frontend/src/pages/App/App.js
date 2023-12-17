@@ -14,44 +14,10 @@ import Checkout from '../Checkout/Checkout';
 import PurchaseSuccessful from '../PurchaseSuccessful/PurchaseSuccessful';
 
 function App() {
-  // const [todoList, setTodoList] = useState([]);
-  // const [title, setTitle] = useState('');
-  // const [description, setDescription] = useState('');
-  // const [completed, setCompleted] = useState(false);
-
-  // useEffect(
-  //   () =>
-  //     // {
-  //     //   axios
-  //     //     .get('http://localhost:8000/api/todos/')
-  //     //     .then((res) => {
-  //     //       console.log(res.data);
-  //     //       setTodoList(res.data);
-  //     //     })
-  //     //     .catch((err) => {
-  //     //       console.log(err);
-  //     //     });
-  //     // }
-  //     refreshTodos,
-  //   []
-  // );
-
-  // const refreshTodos = () => {
-  //   API.get('/')
-  //     .then((res) => {
-  //       setTodoList(res.data);
-  //     })
-  //     .catch(console.err);
-  // };
-
-  // const onSubmit = (e) => {
-  //   e.preventDefault();
-  //   let todo = { title, description, completed };
-  //   API.post('/', todo).then(() => refreshTodos());
-  // };
   return (
     <>
       <div className="App">
+        <div className="site-banner">SITE BANNER</div>
         <Navbar />
         <Routes>
           <Route path="/category/:id" element={<CategoryPage />} />
@@ -68,3 +34,39 @@ function App() {
 }
 
 export default App;
+
+// const [todoList, setTodoList] = useState([]);
+// const [title, setTitle] = useState('');
+// const [description, setDescription] = useState('');
+// const [completed, setCompleted] = useState(false);
+
+// useEffect(
+//   () =>
+//     // {
+//     //   axios
+//     //     .get('http://localhost:8000/api/todos/')
+//     //     .then((res) => {
+//     //       console.log(res.data);
+//     //       setTodoList(res.data);
+//     //     })
+//     //     .catch((err) => {
+//     //       console.log(err);
+//     //     });
+//     // }
+//     refreshTodos,
+//   []
+// );
+
+// const refreshTodos = () => {
+//   API.get('/')
+//     .then((res) => {
+//       setTodoList(res.data);
+//     })
+//     .catch(console.err);
+// };
+
+// const onSubmit = (e) => {
+//   e.preventDefault();
+//   let todo = { title, description, completed };
+//   API.post('/', todo).then(() => refreshTodos());
+// };
