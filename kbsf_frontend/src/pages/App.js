@@ -1,9 +1,11 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
-import API from './API';
-import Navbar from './components/Navbar';
+// import API from '../API';
+import Navbar from '../components/Navbar';
+import ProductCarousel from '../components/ProductCarousel';
+import Footer from '../components/Footer';
 
 function App() {
   // const [todoList, setTodoList] = useState([]);
@@ -45,6 +47,8 @@ function App() {
     <div className="App">
       <div>
         <Navbar />
+        <ProductCarousel />
+        <Footer />
       </div>
     </div>
   );
