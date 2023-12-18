@@ -10,6 +10,7 @@ class Product(models.Model):
     daw = models.CharField(max_length=20)
     description = models.TextField()
     price = models.IntegerField()
+    image_url = models.URLField(max_length=1024, default='')
 
 
     def __str__(self):
