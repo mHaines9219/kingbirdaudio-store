@@ -15,7 +15,7 @@ function CategoryPage() {
       .catch((error) => console.error('Error fetching data:', error));
   }, [dawName]);
 
-  return <ProductCarousel products={products} />;
+  return <ProductCarousel products={products} dawName={dawName} />;
 }
 
 export default CategoryPage;
