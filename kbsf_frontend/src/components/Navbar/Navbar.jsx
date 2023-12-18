@@ -8,16 +8,16 @@ export default function Navbar() {
       <Link to="/category/protools" className="cat-link">
         PRO TOOLS
       </Link>
-      <Link to="/category/:id" className="cat-link">
+      <Link to="/category/flstudio" className="cat-link">
         FL STUDIO
       </Link>
-      <Link to="/category/:id" className="cat-link">
+      <Link to="/category/logic" className="cat-link">
         LOGIC
       </Link>
-      <Link to="/category/:id" className="cat-link">
+      <Link to="/category/ableton" className="cat-link">
         ABLETON
       </Link>
-      <Link to="/category/:id" className="cat-link">
+      <Link to="/category/bandlab" className="cat-link">
         BANDLAB
       </Link>
 
