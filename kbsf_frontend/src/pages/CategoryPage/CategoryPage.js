@@ -7,10 +7,22 @@ function CategoryPage() {
   const [products, setProducts] = useState([]);
   const { dawName } = useParams(); // Get the dawName from the URL
 
+  // useEffect(() => {
+  //   setProducts([]);
+  //   axios
+  //     .get(`http://localhost:8000/api/category/${dawName}/`)
+  //     .then((response) => setProducts(response.data))
+  //     .catch((error) => console.error('Error fetching data:', error));
+  // }, [dawName]);
   useEffect(() => {
     setProducts([]);
+
+    const fetchUrl = dawName
+      ? `http://localhost:8000/api/category/${dawName}/`
+      : `http://localhost:8000/api/products/featured/`; // URL for featured products
+
     axios
-      .get(`http://localhost:8000/api/category/${dawName}/`)
+      .get(fetchUrl)
       .then((response) => setProducts(response.data))
       .catch((error) => console.error('Error fetching data:', error));
   }, [dawName]);

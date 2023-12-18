@@ -30,6 +30,6 @@ router.register(r"products", views.ProductView, "product")
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("api/", include(router.urls)),
     path("api/", include("backend_store.urls")),
+    path("api/", include(router.urls)),
 ]

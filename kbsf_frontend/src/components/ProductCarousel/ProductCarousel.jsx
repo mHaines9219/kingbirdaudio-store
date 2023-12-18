@@ -15,18 +15,25 @@ export default function ProductCarousel({ products, dawName }) {
   const getDisplayDawName = (dawName) => {
     return dawDisplayMap[dawName.toLowerCase()] || dawName;
   };
+  const displayedProducts = () => {
+    if (!dawName) {
+      // If dawName is not provided, filter to show only featured products
+      return products.filter((product) => product.isFeatured);
+    } else {
+      // If dawName is provided, filter products based on dawName
+      return products.filter((product) => product.daw === dawName);
+    }
+  };
 
   return (
-    <>
-      <div className="product-carousel">
-        {products.map((product) => (
-          <div key={product.id} className="individual-product">
-            <h3>{product.title}</h3>
-            <h3>{getDisplayDawName(product.daw)}</h3>
-            {/* Render other product details */}
-          </div>
-        ))}
-      </div>
-    </>
+    <div className="product-carousel">
+      {displayedProducts().map((product) => (
+        <div key={product.id} className="individual-product">
+          <h3>{product.title}</h3>
+          <h3>{dawName ? getDisplayDawName(product.daw) : product.daw}</h3>
+          {/* Render other product details */}
+        </div>
+      ))}
+    </div>
   );
 }
