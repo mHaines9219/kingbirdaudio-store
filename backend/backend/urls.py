@@ -24,7 +24,6 @@ router = routers.DefaultRouter()
 #1: url path
 #2: serializer view in views.py
 #3:
-router.register(r'todos', views.TodoView,'todo')
 router.register(r'products', views.ProductView,'product')
 
 urlpatterns = [
