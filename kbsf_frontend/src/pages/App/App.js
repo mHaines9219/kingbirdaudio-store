@@ -34,7 +34,7 @@ function App() {
         <div className="site-banner">SITE BANNER</div>
         <Navbar />
         <Routes>
-          <Route path="/category/:id" element={<CategoryPage />} />
+          <Route path="/category/:dawName" element={<CategoryPage />} />
           <Route path="/product/:id" element={<DetailPage />} />
           <Route path="/profile/:id" element={<ProfilePage />} />
           <Route path="/checkout" element={<Checkout />} />
