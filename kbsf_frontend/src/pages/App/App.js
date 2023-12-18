@@ -14,6 +14,20 @@ import Checkout from '../Checkout/Checkout';
 import PurchaseSuccessful from '../PurchaseSuccessful/PurchaseSuccessful';
 
 function App() {
+  const [products, setProducts] = useState([]);
+
+  useEffect(() => {
+    axios
+      .get('http://localhost:8000/api/products/')
+      .then((res) => {
+        setProducts(res.data);
+        console.log(res.data);
+      })
+      .catch((error) => {
+        console.error('Error fetching data: ', error);
+        console.error('Attempted to reach: ', error.config.url);
+      });
+  }, []);
   return (
     <>
       <div className="App">
@@ -26,7 +40,7 @@ function App() {
           <Route path="/checkout" element={<Checkout />} />
           <Route path="/purchasesuccessful" element={<PurchaseSuccessful />} />
         </Routes>
-        <ProductCarousel />
+        <ProductCarousel products={products} />
         <Footer />
       </div>
     </>
