@@ -8,7 +8,7 @@ export default function ProductCarousel({ products }) {
     <>
       <div className="product-carousel">
         {products.map((product) => (
-          <div key={product.id}>
+          <div key={product.id} className="individual-product">
             <h3>{product.title}</h3>
             <h3>{product.daw}</h3>
             {/* Render other product details */}
