@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
+import Cart from '../Cart/Cart';
 
 export default function Navbar() {
   return (
@@ -24,6 +25,7 @@ export default function Navbar() {
       <Link to="/" className="cat-link" id="navbar-home-btn">
         HOME
       </Link>
+      <Cart />
     </div>
   );
 }
