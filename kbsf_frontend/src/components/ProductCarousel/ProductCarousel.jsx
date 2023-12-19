@@ -2,6 +2,7 @@ import React from 'react';
 import './ProductCarousel.css';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 
 const dawDisplayMap = {
   protools: 'Pro Tools',
@@ -28,11 +29,13 @@ export default function ProductCarousel({ products, dawName }) {
   return (
     <div className="product-carousel">
       {displayedProducts().map((product) => (
-        <div key={product.id} className="individual-product">
-          <h3>{product.title}</h3>
-          <h3>{dawName ? getDisplayDawName(product.daw) : product.daw}</h3>
-          {/* Render other product details */}
-        </div>
+        <Link to={'/product/' + product.id}>
+          <div key={product.id} className="individual-product">
+            <h3>{product.title}</h3>
+            <h3>{dawName ? getDisplayDawName(product.daw) : product.daw}</h3>
+            {/* Render other product details */}
+          </div>
+        </Link>
       ))}
     </div>
   );

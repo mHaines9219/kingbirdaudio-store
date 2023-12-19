@@ -36,7 +36,7 @@ function App() {
         <Routes>
           <Route path="/category/:dawName" element={<CategoryPage />} />
           <Route path="/" element={<CategoryPage />} />
-          <Route path="/product/:id" element={<DetailPage />} />
+          <Route path="/product/:productId" element={<DetailPage />} />
           <Route path="/profile/:id" element={<ProfilePage />} />
           <Route path="/checkout" element={<Checkout />} />
           <Route path="/purchasesuccessful" element={<PurchaseSuccessful />} />
