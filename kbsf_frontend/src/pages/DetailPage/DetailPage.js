@@ -4,7 +4,7 @@ import { useParams } from 'react-router-dom';
 import axios from 'axios';
 import ProductDetail from '../../components/ProductDetail/ProductDetail';
 
-function DetailPage() {
+function DetailPage({ setCartItems, cartItems }) {
   const [product, setProduct] = useState([]);
   const { productId } = useParams();
   console.log('Product ID:', productId);
@@ -20,7 +20,14 @@ function DetailPage() {
     return <div>Loading...</div>;
   }
 
-  return <ProductDetail product={product} productId={productId} />;
+  return (
+    <ProductDetail
+      setCartItems={setCartItems}
+      cartItems={cartItems}
+      product={product}
+      productId={productId}
+    />
+  );
 }
 
 export default DetailPage;

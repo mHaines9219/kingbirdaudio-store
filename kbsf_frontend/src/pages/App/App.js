@@ -15,6 +15,7 @@ import PurchaseSuccessful from '../PurchaseSuccessful/PurchaseSuccessful';
 
 function App() {
   const [products, setProducts] = useState([]);
+  const [cartItems, setCartItems] = useState([]);
 
   useEffect(() => {
     axios
@@ -32,11 +33,16 @@ function App() {
     <>
       <div className="App">
         <div className="site-banner">SITE BANNER</div>
-        <Navbar />
+        <Navbar cartItems={cartItems} />
         <Routes>
           <Route path="/category/:dawName" element={<CategoryPage />} />
           <Route path="/" element={<CategoryPage />} />
-          <Route path="/product/:productId" element={<DetailPage />} />
+          <Route
+            path="/product/:productId"
+            element={
+              <DetailPage setCartItems={setCartItems} cartItems={cartItems} />
+            }
+          />
           <Route path="/profile/:id" element={<ProfilePage />} />
           <Route path="/checkout" element={<Checkout />} />
           <Route path="/purchasesuccessful" element={<PurchaseSuccessful />} />
