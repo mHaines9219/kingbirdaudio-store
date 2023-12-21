@@ -17,7 +17,12 @@ function App() {
   const [products, setProducts] = useState([]);
   const [cartItems, setCartItems] = useState([]);
 
+  // Load cart items from localStorage on initial render
   useEffect(() => {
+    const savedCartItems = localStorage.getItem('cartItems');
+    if (savedCartItems) {
+      setCartItems(JSON.parse(savedCartItems));
+    }
     axios
       .get('http://localhost:8000/api/products/')
       .then((res) => {
@@ -33,10 +38,20 @@ function App() {
     <>
       <div className="App">
         <div className="site-banner">SITE BANNER</div>
-        <Navbar cartItems={cartItems} />
+        <Navbar setCartItems={setCartItems} cartItems={cartItems} />
         <Routes>
-          <Route path="/category/:dawName" element={<CategoryPage />} />
-          <Route path="/" element={<CategoryPage />} />
+          <Route
+            path="/category/:dawName"
+            element={
+              <CategoryPage setCartItems={setCartItems} cartItems={cartItems} />
+            }
+          />
+          <Route
+            path="/"
+            element={
+              <CategoryPage setCartItems={setCartItems} cartItems={cartItems} />
+            }
+          />
           <Route
             path="/product/:productId"
             element={
@@ -44,7 +59,12 @@ function App() {
             }
           />
           <Route path="/profile/:id" element={<ProfilePage />} />
-          <Route path="/checkout" element={<Checkout />} />
+          <Route
+            path="/checkout"
+            element={
+              <Checkout setCartItems={setCartItems} cartItems={cartItems} />
+            }
+          />
           <Route path="/purchasesuccessful" element={<PurchaseSuccessful />} />
         </Routes>
         <Footer />

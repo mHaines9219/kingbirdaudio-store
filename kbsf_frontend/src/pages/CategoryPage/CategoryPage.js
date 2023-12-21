@@ -4,6 +4,7 @@ import { useParams } from 'react-router-dom';
 import ProductCarousel from '../../components/ProductCarousel/ProductCarousel';
 
 function CategoryPage() {
+  
   const [products, setProducts] = useState([]);
   const { dawName } = useParams(); // Get the dawName from the URL
 

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import './Navbar.css';
 import Cart from '../Cart/Cart';
 
-export default function Navbar({ cartItems }) {
+export default function Navbar({ cartItems, setCartItems }) {
   return (
     <div className="navbar-container">
       <Link to="/category/protools" className="cat-link">
@@ -25,7 +25,7 @@ export default function Navbar({ cartItems }) {
       <Link to="/" className="cat-link" id="navbar-home-btn">
         HOME
       </Link>
-      <Cart cartItems={cartItems} />
+      <Cart cartItems={cartItems} setCartItems={setCartItems} />
     </div>
   );
 }
