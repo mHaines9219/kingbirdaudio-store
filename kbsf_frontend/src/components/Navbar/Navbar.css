@@ -25,3 +25,33 @@
   font-size: larger;
   transition: 0.2s;
 }
+
+@media only screen and (max-width: 600px) {
+  .navbar-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-left: 10px;
+    align-items: center;
+    background-color: var(--main-bg-color);
+  }
+
+  .cat-link {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    align-items: center;
+    color: var(--main-btn-link-text-color);
+    font-family: var(--main-font);
+  }
+  .cat-link:hover {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    align-items: center;
+    color: rgb(167, 60, 167);
+    font-family: var(--main-font);
+    font-size: larger;
+    transition: 0.2s;
+  }
+}
