@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import './Checkout.css';
 
 export default function Checkout({ cartItems, setCartItems }) {
   const [orderCreated, setOrderCreated] = useState(false);
@@ -30,18 +31,32 @@ export default function Checkout({ cartItems, setCartItems }) {
   };
 
   return (
-    <div>
-      <h2>Checkout</h2>
-      <div>
-        {cartItems.map((item) => (
-          <div key={item.id}>
-            <span>{item.title}</span>
-            {/* Display other item details as needed */}
-          </div>
-        ))}
-      </div>
+    <div className="checkout-container">
+      <h1>Checkout</h1>
       {!orderCreated ? (
-        <button onClick={handlePayment}>Pay Now</button>
+        <>
+          <div className="checkout-list-container">
+            {cartItems.map((item) => (
+              <div key={item.id}>
+                <span>
+                  <h2>
+                    {item.title} : ${item.price}
+                  </h2>
+                </span>
+                {/* Display other item details as needed */}
+              </div>
+            ))}
+            <div className="total-price">
+              <h1 className="checkout-total">
+                Total: $
+                {cartItems.reduce((total, item) => total + item.price, 0)}
+              </h1>
+            </div>
+          </div>
+          <button onClick={handlePayment} className="checkout-button">
+            Pay Now
+          </button>
+        </>
       ) : (
         <div>
           <h3>Thank you for your purchase! Here are your download links:</h3>

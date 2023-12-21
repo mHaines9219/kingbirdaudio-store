@@ -23,7 +23,7 @@ export default function Navbar({ cartItems, setCartItems }) {
       </Link>
 
       <Link to="/" className="cat-link" id="navbar-home-btn">
-        HOME
+        FEATURED
       </Link>
       <Cart cartItems={cartItems} setCartItems={setCartItems} />
     </div>

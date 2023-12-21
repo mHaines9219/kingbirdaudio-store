@@ -1,0 +1,30 @@
+.product-detail-page-container {
+  height: 60vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
+.individual-product {
+  height: 50vh;
+  max-width: 40vw;
+  font-family: var(--main-font);
+  text-decoration: none;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.product-pic-detail-page {
+  border-radius: 20px;
+  height: 400px;
+  width: 400px;
+  align-items: center;
+}
+
+.price-header {
+  margin-top: -15px;
+}

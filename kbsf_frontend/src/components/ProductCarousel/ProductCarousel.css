@@ -1,13 +1,28 @@
 .product-carousel {
   height: 60vh;
-  border: 2px solid green;
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 
 .individual-product {
-  border: 2px solid purple;
   height: 30vh;
-  width: 20vw;
-  margin: auto;
+  font-family: var(--main-font);
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-pic {
+  max-width: auto;
+  height: 300px;
+  border-radius: 20px;
+}
+.product-pic:hover {
+  max-width: auto;
+  height: 300px;
+  border-radius: 20px;
+  border: 5px solid var(--main-bg-color);
+  transition: 0.1s;
+  transform: scale(1.1);
 }

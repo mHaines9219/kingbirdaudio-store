@@ -11,3 +11,21 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 } */
+
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap');
+
+:root {
+  --main-bg-color: rgb(92, 0, 92);
+  --main-btn-color: powderblue;
+  --main-btn-border-color: grey;
+  --main-old-posts-color: powderblue;
+  --main-btn-link-text-color: gray;
+  --main-btn-link-bg-color-hover: teal;
+  --main-btn-link-text-color-hover: white;
+  --main-btn-link-text-color-switch: black;
+  --main-font: 'Chakra Petch', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}

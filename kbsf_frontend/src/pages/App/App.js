@@ -37,7 +37,10 @@ function App() {
   return (
     <>
       <div className="App">
-        <div className="site-banner">SITE BANNER</div>
+        <div className="site-banner">
+          <h1>KINGBIRD AUDIO</h1>
+          <h3>TEMPLATES AND PRESETS FOR THE MODERN MUSICIAN</h3>
+        </div>
         <Navbar setCartItems={setCartItems} cartItems={cartItems} />
         <Routes>
           <Route
@@ -65,7 +68,6 @@ function App() {
               <Checkout setCartItems={setCartItems} cartItems={cartItems} />
             }
           />
-          <Route path="/purchasesuccessful" element={<PurchaseSuccessful />} />
         </Routes>
         <Footer />
       </div>
@@ -74,39 +76,3 @@ function App() {
 }
 
 export default App;
-
-// const [todoList, setTodoList] = useState([]);
-// const [title, setTitle] = useState('');
-// const [description, setDescription] = useState('');
-// const [completed, setCompleted] = useState(false);
-
-// useEffect(
-//   () =>
-//     // {
-//     //   axios
-//     //     .get('http://localhost:8000/api/todos/')
-//     //     .then((res) => {
-//     //       console.log(res.data);
-//     //       setTodoList(res.data);
-//     //     })
-//     //     .catch((err) => {
-//     //       console.log(err);
-//     //     });
-//     // }
-//     refreshTodos,
-//   []
-// );
-
-// const refreshTodos = () => {
-//   API.get('/')
-//     .then((res) => {
-//       setTodoList(res.data);
-//     })
-//     .catch(console.err);
-// };
-
-// const onSubmit = (e) => {
-//   e.preventDefault();
-//   let todo = { title, description, completed };
-//   API.post('/', todo).then(() => refreshTodos());
-// };

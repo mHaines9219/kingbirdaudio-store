@@ -1,8 +1,21 @@
 // kbsf_frontend/src/components/ProductDetail/ProductDetail.jsx
 import React from 'react';
 import axios from 'axios';
+import './ProductDetail.css';
+
+const dawDisplayMap = {
+  protools: 'Pro Tools',
+  logic: 'Logic',
+  ableton: 'Ableton',
+  bandlab: 'BandLab',
+  flstudio: 'FL Studio',
+  // Add other mappings as needed
+};
 
 export default function ProductDetail({ product, setCartItems, cartItems }) {
+  const getDisplayDawName = (dawName) => {
+    return dawDisplayMap[dawName.toLowerCase()] || dawName;
+  };
   const addToCart = async () => {
     try {
       const response = await axios.post(
@@ -29,8 +42,22 @@ export default function ProductDetail({ product, setCartItems, cartItems }) {
 
   return (
     <>
-      <div>{product.title}</div>
-      <button onClick={addToCart}>ADD TO CART</button>
+      <div className="product-detail-page-container">
+        <div key={product.id} className="individual-product">
+          <h3>{product.title}</h3>
+          <img
+            src={product.image_url}
+            alt={product.title}
+            className="product-pic-detail-page"
+          ></img>{' '}
+          <h4>{product.description}</h4>
+          <h3 className="price-header">Price: ${product.price}</h3>
+          {/* Render other product details */}
+        </div>{' '}
+        <button onClick={addToCart} className="cart-button">
+          ADD TO CART
+        </button>
+      </div>
     </>
   );
 }

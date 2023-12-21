@@ -1,4 +1,58 @@
 .cart-container {
-  border: 2px solid red;
+  position: absolute;
+  right: 5%;
+  display: flex;
+}
+.cart-container.open {
+  position: absolute;
+  right: 2%;
+  top: 30%;
+  display: flex;
   background-color: white;
+}
+.collapse-btn {
+  background-color: black;
+  color: white;
+}
+
+.open-cart-divs {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  align-items: flex-end;
+}
+
+.delete-cart-btn {
+  margin: 10px;
+  background-color: white;
+  border: none;
+  color: red;
+}
+
+.total-price {
+  color: red;
+  margin-right: 60px;
+}
+
+.checkout-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+  margin-top: 20px;
+  margin-right: 50px;
+  padding: 10px;
+}
+.checkout-btn:hover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: green;
+  color: white;
+  margin-top: 20px;
+  margin-right: 50px;
+  padding: 10px;
+  transition: 0.2s;
+  border-radius: 20px;
 }

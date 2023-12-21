@@ -32,7 +32,16 @@ export default function ProductCarousel({ products, dawName }) {
         <Link to={'/product/' + product.id}>
           <div key={product.id} className="individual-product">
             <h3>{product.title}</h3>
-            <h3>{dawName ? getDisplayDawName(product.daw) : product.daw}</h3>
+            <img
+              src={product.image_url}
+              alt={product.title}
+              className="product-pic"
+            ></img>{' '}
+            <h3>
+              {dawName
+                ? getDisplayDawName(product.daw)
+                : getDisplayDawName(product.daw)}
+            </h3>
             {/* Render other product details */}
           </div>
         </Link>
