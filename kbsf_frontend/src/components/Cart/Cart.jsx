@@ -2,17 +2,23 @@ import React, { useState, useEffect } from 'react';
 import ShoppingCartIcon from '../../assets/cart_icon.png';
 import DeleteIcon from '../../assets/delete_icon.png';
 import './Cart.css';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 export default function Cart({ cartItems, setCartItems }) {
   const [isOpen, setIsOpen] = useState(false);
   const [localCartItems, setLocalCartItems] = useState([]);
+
+  const location = useLocation();
 
   // Sync cartItems prop with local state and localStorage
   useEffect(() => {
     setLocalCartItems(cartItems);
     localStorage.setItem('cartItems', JSON.stringify(cartItems));
   }, [cartItems]);
+
+  useEffect(() => {
+    setIsOpen(false);
+  }, [location]);
 
   // Delete item from cart
   const deleteFromCart = (itemId) => {

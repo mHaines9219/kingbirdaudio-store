@@ -39,8 +39,7 @@ class FeaturedProductsView(APIView):
 
 @api_view(["POST"])
 def create_order(request):
-    print("create order")
-    print(request.data)
+
     cart_id = request.data.get('cart_id')
     print(cart_id)
     cart = get_object_or_404(Cart, id=cart_id)
