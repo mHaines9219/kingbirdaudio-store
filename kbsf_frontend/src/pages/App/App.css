@@ -55,6 +55,8 @@ html {
   background-color: var(--main-bg-color);
   color: white;
   border-radius: 20px;
+  height: 40px;
+  width: 150px;
 }
 .cart-button:hover {
   font-family: var(--main-font);
