@@ -17,6 +17,7 @@
   max-width: auto;
   height: 300px;
   border-radius: 20px;
+  transition: 0.2s;
 }
 .product-pic:hover {
   max-width: auto;
