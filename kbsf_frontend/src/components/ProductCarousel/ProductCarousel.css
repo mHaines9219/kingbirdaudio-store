@@ -17,13 +17,13 @@
   max-width: auto;
   height: 300px;
   border-radius: 20px;
-  transition: 0.2s;
+  transition: 0.3s;
 }
 .product-pic:hover {
   max-width: auto;
   height: 300px;
   border-radius: 20px;
   border: 5px solid var(--main-bg-color);
-  transition: 0.1s;
+  transition: 0.3s;
   transform: scale(1.1);
 }
