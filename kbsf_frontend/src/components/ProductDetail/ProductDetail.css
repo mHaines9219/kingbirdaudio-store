@@ -4,6 +4,8 @@
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
+  margin-top: 50px;
+  margin-bottom: 30px;
 }
 
 .individual-product {
